@@ -35,6 +35,9 @@
             font-family: 'IBM Plex Sans KR', sans-serif !important;
             font-weight: 600;
         }
+        .letmeshade{
+          text-shadow: 1px 2px 5px black;        
+        }
         *{
             font-family: 'Gowun Dodum', sans-serif;
         }
@@ -58,37 +61,37 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="#" class="nav-link px-2 text-secondary">대문</a></li>
                     <li><a href="./reservation.html" class="nav-link px-2 text-white">배움장터 예약하기</a></li>
-                    <li><a href="#" class="nav-link px-2 text-muted">TBA</a></li>
-                    <li><a href="#" class="nav-link px-2 text-muted">TBA</a></li>
+                    <li><a href="./blog/index.html" class="nav-link px-2 text-white">블로그</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <!-- End of the header -->
-    <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-white" style="height: 90vh;">
+    <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-dark text-white" style="height: 90vh; background-image: url(./static/cover.jpg); background-size: cover;">
+      <div style="height: auto; width: auto; background-color: rgba(0,0,0,0.7);">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-1 fw-normal m-5 badass" id="">배움장터</h1>
-                <p class="lead fw-normal">거꾸로캠퍼스 학생들이 1개 모듈 사이에 얼마나 성장했나 확인해보세요.</p>
-                <p class="lead fw-normal">배움을 공유하는 배움장터로 </p>
+                <p class="lead fw-normal">거꾸로캠퍼스 학생들이 1개 모듈 사이에 얼마나 성장했을지 기대되지 않으시나요?</p>
             <a class="btn btn-light m-5" href="./reservation.html">Reservation</a>
         </div>
+      </div>
     </div>
     <!-- End of the first cover -->
     <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Blog articles</h2>
+        <h2 class="pb-2 border-bottom">거캠러 스토리</h2>
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
             <div class="col">
                 <div class="card card-cover h-100 overflow-auto text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 lh-2">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
+                    <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade" >'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
                     <ul class="d-flex list-unstyled mt-auto">
                     <li class="d-flex align-items-center me-3">
-                        <small>팀명</small>
+                        <small class="letmeshade">팀명</small>
                     </li>
                     <li class="d-flex align-items-center">
                         <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>팀원, 팀원, 팀원, 팀원</small>
+                        <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
                     </li>
                     </ul>
                 </div>
@@ -98,14 +101,14 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
+              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
               <ul class="d-flex list-unstyled mt-auto">
               <li class="d-flex align-items-center me-3">
-                  <small>팀명</small>
+                  <small class="letmeshade">팀명</small>
               </li>
               <li class="d-flex align-items-center">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>팀원, 팀원, 팀원, 팀원</small>
+                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
               </li>
               </ul>
           </div>
@@ -115,14 +118,14 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1640622308113-ca5d7b948515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
+              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
               <ul class="d-flex list-unstyled mt-auto">
               <li class="d-flex align-items-center me-3">
-                  <small>팀명</small>
+                  <small class="letmeshade">팀명</small>
               </li>
               <li class="d-flex align-items-center">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>팀원, 팀원, 팀원, 팀원</small>
+                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
               </li>
               </ul>
           </div>
