@@ -31,6 +31,12 @@
         html::-webkit-scrollbar{
             display: none;
         }
+        body{
+            background-color: whitesmoke;
+        }
+        a {
+            text-decoration: none;
+        }
         .badass{
             font-family: 'IBM Plex Sans KR', sans-serif !important;
             font-weight: 600;
@@ -39,9 +45,26 @@
             font-family: 'Gowun Dodum', sans-serif;
         }
         .letmeshade{
-          text-shadow: 1px 2px 5px black;        
+          text-shadow: 1px 2px 5px black !important;        
         }
-
+        .hover-white{
+          -moz-transition: all .2s ease-in;
+          -o-transition: all .2s ease-in;
+          -webkit-transition: all .2s ease-in;
+          transition: all .2s ease-in;
+        }
+        .hover-white:hover{
+            color: whitesmoke !important;
+        }
+        .hover-box{
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in;
+            transition: all .2s ease-in;
+        }
+        .hover-box:hover{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
     </style>
   </head>
   <body>
@@ -66,14 +89,19 @@
             <div class="col">
                 <div class="card card-cover h-100 overflow-auto text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade" >'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
+                    <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                        <a href="#">
+                            <p class="text-white hover-box">
+                                팀원 모두가 만족하는 문제를 찾기까지
+                            </p>
+                        </a>
+                    </h2>
                     <ul class="d-flex list-unstyled mt-auto">
                     <li class="d-flex align-items-center me-3">
                         <small class="letmeshade">팀명</small>
                     </li>
                     <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                              <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
                     </li>
                     </ul>
                 </div>
@@ -81,40 +109,40 @@
         </div>
 
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="d-flex align-items-center me-3">
-                  <small class="letmeshade">팀명</small>
-              </li>
-              <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
-              </li>
-              </ul>
-          </div>
-          </div>
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                    <a href="#" class="text-white hover-box">'우물 안 개구리'라는걸 거캠에서 느꼈어요</a>
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                    <small class="letmeshade">팀명</small>
+                </li>
+                <li class="d-flex align-items-center">
+                      <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                </li>
+                </ul>
+            </div>
+            </div>
         </div>
 
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1640622308113-ca5d7b948515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="d-flex align-items-center me-3">
-                  <small class="letmeshade">팀명</small>
-              </li>
-              <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
-              </li>
-              </ul>
-          </div>
-          </div>
+                <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                    <a href="#" class="text-white hover-box">개인주제를 통해서 한 뼘 더 성장해나가기</a>
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                    <small class="letmeshade">팀명</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                </li>
+                </ul>
+            </div>
+            </div>
         </div>
-
-
 
         </div>
     <div>
@@ -122,14 +150,15 @@
             <div class="col">
                 <div class="card card-cover h-100 overflow-auto text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade" >'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
+                    <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                        <a href="#" class="text-white hover-box">바빠서 밥을 겨우 배만 채우는 수준으로 먹었어요(웃음)</a>
+                    </h2>
                     <ul class="d-flex list-unstyled mt-auto">
                     <li class="d-flex align-items-center me-3">
                         <small class="letmeshade">팀명</small>
                     </li>
                     <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                              <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
                     </li>
                     </ul>
                 </div>
@@ -139,16 +168,17 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="d-flex align-items-center me-3">
-                  <small class="letmeshade">팀명</small>
-              </li>
-              <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
-              </li>
-              </ul>
+                <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                    <a href="#" class="text-white hover-box">세상에서도 뭘 해야 잘 할 수 있을지 알았어요</a>
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                    <small class="letmeshade">팀명</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                </li>
+                </ul>
           </div>
           </div>
         </div>
@@ -156,16 +186,17 @@
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://images.unsplash.com/photo-1640622308113-ca5d7b948515?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'); background-size: cover;">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade">'우리 팀원 모두가 만족할만한 문제를 찾아나가기까지'</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-              <li class="d-flex align-items-center me-3">
-                  <small class="letmeshade">팀명</small>
-              </li>
-              <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
-              </li>
-              </ul>
+                <h2 class="pt-5 mt-5 mb-4 lh-2 letmeshade text-white">
+                    <a href="#" class="text-white hover-box">거캠의 마지막을 장식하기 위한 노력</a>
+                </h2>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="d-flex align-items-center me-3">
+                    <small class="letmeshade">팀명</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <small class="letmeshade">팀원, 팀원, 팀원, 팀원</small>
+                </li>
+                </ul>
           </div>
           </div>
         </div>
@@ -186,34 +217,34 @@
           </div>
       
           <div class="col">
-            <h5><a href="../blog/index.html" class="text-muted">Blog</a></h5>
+            <h5 ><a href="../blog/index.html" class="text-muted">Blog</a></h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">팀 세모나다</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">팀 세모나다</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">팀 세모나다</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">팀 세모나다</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">팀 세모나다</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">팀 세모나다</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">팀 세모나다</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">팀 세모나다</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">팀 세모나다</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">팀 세모나다</a></li>
             </ul>
           </div>
       
           <div class="col">
             <h5 class="text-muted">Links</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">어쩌고</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">저쩌고</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">어쩌고</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">저쩌고</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">어쩌고</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">어쩌고</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">저쩌고</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">어쩌고</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">저쩌고</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted hover-white">어쩌고</a></li>
             </ul>
           </div>
       
           <div class="col">
             <h5 class="text-muted">Links</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="https://거꾸로캠퍼스.kr" class="nav-link p-0 text-muted">거꾸로캠퍼스 홈페이지</a></li>
-              <li class="nav-item mb-2"><a href="https://gschool.kr" class="nav-link p-0 text-muted">사단법인 교육실험실21 홈페이지</a></li>
-              <li class="nav-item mb-2"><a href="https://youtube.com" class="nav-link p-0 text-muted">거꾸로캠퍼스 YouTube</a></li>
-              <li class="nav-item mb-2"><a href="https://google.com" class="nav-link p-0 text-muted">배움장터 예약 폼</a></li>
+              <li class="nav-item mb-2"><a href="https://거꾸로캠퍼스.kr" class="nav-link p-0 text-muted hover-white">거꾸로캠퍼스 홈페이지</a></li>
+              <li class="nav-item mb-2"><a href="https://gschool.kr" class="nav-link p-0 text-muted hover-white">사단법인 교육실험실21 홈페이지</a></li>
+              <li class="nav-item mb-2"><a href="https://youtube.com" class="nav-link p-0 text-muted hover-white">거꾸로캠퍼스 YouTube</a></li>
+              <li class="nav-item mb-2"><a href="https://google.com" class="nav-link p-0 text-muted hover-white">배움장터 예약 폼</a></li>
             </ul>
           </div>
         </footer>
